@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,12 +48,14 @@
       }
     </style>
   </head>
-  <body class="font-manrope text-red col bg-slate-500">
+  <body class="font-manrope">
     <!-- Header -->
 
     <header class="container md:mx-auto pt-14 pb-7 px-5 md:px-0">
       <!-- Banner -->
-      <div class="flex flex-col justify-between items-center md:flex-row">
+      <div
+        class="flex flex-col gap-5 md:gap-0 justify-between items-center md:flex-row"
+      >
         <div class="w-full lg:w-1/2 pr-5 lg:pr-28 space-y-7">
           <h3
             class="text-6xl lg:text-7xl font-extrabold leading-snug lg:leading-[100px] text-heading-color"
@@ -87,7 +89,84 @@
       </div>
     </header>
     <!-- Main -->
-    <main></main>
+    <main class="container md:mx-auto px-5 md:px-0">
+      <!-- Our Featured Products -->
+      <section class="mt-32">
+        <div class="max-w-4xl text-center m-auto space-y-5 mb-12">
+          <h2 class="text-5xl font-extrabold text-heading-color">
+            Our Featured Products
+          </h2>
+          <p class="text-base font-medium text-description-color">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="card card-compact py-7 px-14 text-center bg-gradient-to-r from-[#F4F4F4] to-[#fff]"
+          >
+            <figure>
+              <img src="images/tea-1.png" alt="tea" />
+            </figure>
+            <div class="text-center space-y-2 mt-7">
+              <h2 class="text-2xl font-extrabold text-heading-color">
+                Milk Tea
+              </h2>
+              <p class="text-description-color font-semibold">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-compact py-7 px-14 text-center bg-gradient-to-r from-[#F4F4F4] to-[#fff]"
+          >
+            <figure>
+              <img src="images/tea-2.png" alt="tea" />
+            </figure>
+            <div class="text-center space-y-2 mt-7">
+              <h2 class="text-2xl font-extrabold text-heading-color">
+                Black Tea
+              </h2>
+              <p class="text-description-color font-semibold">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-compact py-7 px-14 text-center bg-gradient-to-r from-[#F4F4F4] to-[#fff]"
+          >
+            <figure>
+              <img src="images/tea-4.png" alt="tea" />
+            </figure>
+            <div class="text-center space-y-2 mt-7">
+              <h2 class="text-2xl font-extrabold text-heading-color">
+                Green Tea
+              </h2>
+              <p class="text-description-color font-semibold">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-compact py-7 px-14 text-center bg-gradient-to-r from-[#F4F4F4] to-[#fff]"
+          >
+            <figure>
+              <img src="images/tea-3.png" alt="tea" />
+            </figure>
+            <div class="text-center space-y-2 mt-7">
+              <h2 class="text-2xl font-extrabold text-heading-color">
+                Lemon Tea
+              </h2>
+              <p class="text-description-color font-semibold">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Footer -->
     <footer></footer>
   </body>
