@@ -10,12 +10,21 @@
       rel="stylesheet"
       type="text/css"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- Customize Tailwind Color -->
     <script>
@@ -24,6 +33,10 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "heading-color": "#1C1C1C",
+              "description-color": "#777",
+              "linear-to": "#F00",
+              "linear-from": "#FF8938",
             },
           },
         },
@@ -34,11 +47,45 @@
         font-family: "Manrope", sans-serif;
       }
     </style>
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope text-red col bg-slate-500">
     <!-- Header -->
-    <header></header>
+
+    <header class="container md:mx-auto pt-14 pb-7 px-5 md:px-0">
+      <!-- Banner -->
+      <div class="flex flex-col justify-between items-center md:flex-row">
+        <div class="w-full lg:w-1/2 pr-5 lg:pr-28 space-y-7">
+          <h3
+            class="text-6xl lg:text-7xl font-extrabold leading-snug lg:leading-[100px] text-heading-color"
+          >
+            It's good tea time at The Tea House
+          </h3>
+          <p class="text-description-color text-lg leading-7">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <button
+            class="btn bg-gradient-to-r from-linear-from to-linear-to text-white border-0 hover:bg-gradient-to-r hover:from-linear-to hover:to-linear-from duration-300"
+          >
+            Explore More
+          </button>
+        </div>
+        <div class="w-full lg:w-1/2 relative">
+          <img src="images/banner.png" class="w-full" alt="" />
+          <div
+            class="bg-white w-64 flex gap-3 items-center py-5 px-7 rounded-lg absolute bottom-2 left-4 lg:bottom-3 lg:left-24 drop-shadow-lg"
+          >
+            <i class="fa-solid fa-star text-orange-400 text-4xl"></i>
+            <div>
+              <h2 class="text-3xl text-heading-color font-extrabold">5.00</h2>
+              <p class="text-base text-description-color">
+                Trust Pilot Ratings
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- Main -->
     <main></main>
     <!-- Footer -->
